@@ -5,9 +5,9 @@ metadata:
   namespace: kargo-helm
 spec:
   subscriptions:
-  - image:
-      repoURL: ghcr.io/sjondegast/guestbook
-      imageSelectionStrategy: SemVer
+    - image:
+        repoURL: ghcr.io/sjondegast/guestbook
+        imageSelectionStrategy: SemVer
 
 ---
 apiVersion: kargo.akuity.io/v1alpha1
@@ -17,10 +17,10 @@ metadata:
   namespace: kargo-helm
 spec:
   subscriptions:
-  - git:
-      branch: main
-      commitSelectionStrategy: NewestFromBranch
-      discoveryLimit: 20
-      repoURL: https://github.com/sjondegast/kargo-helm.git
-      includePaths:
-      - base/feature-flags.yaml
+    - git:
+        branch: main
+        commitSelectionStrategy: NewestFromBranch
+        discoveryLimit: 20
+        repoURL: https://github.com/sjondegast/kargo-helm.git
+        includePaths:
+          - base/feature-flags.yaml

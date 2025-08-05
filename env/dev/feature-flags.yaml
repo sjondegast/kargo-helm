@@ -1,4 +1,6 @@
 featureFlags:
   FEATURE_FOO: enabled
   FEATURE_BAR: enabled
-  FEATURE_BAZ: enabled
+  FEATURE_BAZ: disabled
+  FEATURE_QUX: enabled
+  FEATURE_QUUX: disabled
